@@ -1,5 +1,10 @@
 <template>
-  <div>home</div>
+  <pre>{{ meals }}</pre>
 </template>
 
-<script setup></script>
+<script setup>
+import { computed } from "vue";
+import store from "../store";
+
+const meals = computed(() => store.state.meals);
+</script>
