@@ -1,5 +1,7 @@
 <template>
-  <div class="bg-blue-500">App.vue</div>
+  <router-view />
 </template>
 
-<script setup></script>
+<script setup>
+import { RouterView } from "vue-router";
+</script>
